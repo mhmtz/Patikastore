@@ -2,7 +2,8 @@ import React from 'react';
 import {StyleSheet,Dimensions} from 'react-native';
 export default StyleSheet.create({
   container:{
-    backgroundColor:'white',   
+    flex:1,
+    backgroundColor:'white',  
   },
   title:{
     color:'#800080',

@@ -29,19 +29,18 @@ export default Banner;
 const stil=StyleSheet.create({
     container:{     
       padding:5,
+      flex:1
     },
     box:{
       backgroundColor:'#EDF0F2',  
       padding:10, 
       marginLeft:2, 
       marginRight:2, 
-    },
-    img:{
-      backgroundColor:'white',
-      padding:10,  
     }, 
     pimg:{ 
-        padding:120, 
+        height: Dimensions.get('window').height / 4,
+        width: '100%',
+        resizeMode: 'contain',
     },
     texth2:{
       marginTop:3,

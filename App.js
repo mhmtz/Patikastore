@@ -1,25 +1,26 @@
 import * as React from 'react';
-import {StatusBar,SafeAreaView, Text, View, StyleSheet,Button,FlatList,TextInput,ScrollView } from 'react-native'; 
+import {columns ,SafeAreaView, Text, View, StyleSheet,Button,FlatList,TextInput,ScrollView } from 'react-native'; 
 import style from './assets/store.style';
 import CardBox from './components/Card/card';
 import Banner from './components/Card/banner';
 import store_data from './store.json'; 
 
  function App() { 
+  const renderCards = ({ item }) => <CardBox product={item} />
   return (
-    <SafeAreaView>
+    
     <View style={style.container}>
       <Text style={style.title}>PATIKASTORE</Text>
        <TextInput  placeholder={'Ara...'} style={style.ara}/>
        
-           <FlatList numColumns={2} 
+           <FlatList 
             data={store_data}
-            renderItem={({item}) =><CardBox news={item} /> }
+            renderItem={renderCards} numColumns={columns ? 1 : 2} 
             />
              
-        </View>
+        
         <Banner />
-     </SafeAreaView>
+        </View>
          
   
   )
