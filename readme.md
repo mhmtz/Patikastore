@@ -1,1 +1,2 @@
-**patikastore
+# Patikastore
+## patika.dev
