@@ -1,1 +1,1 @@
-**patikastore
+* PATIKASTORE
